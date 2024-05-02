@@ -4,10 +4,9 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    /* Removed display, justify-content, align-items to allow natural flow */
+    min-height: 100vh; /* Ensures it takes at least the full screen height */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
 .container {
@@ -16,24 +15,10 @@ body {
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px auto; /* Adds margin for top and bottom space */
+    max-width: 960px; /* Optional: Restricts max width for better readability */
 }
 
-h1 {
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    height: 50px; /* Adjust based on your logo's dimensions */
-    margin-right: 10px;
-}
-
-video {
-    max-width: 100%;
-    height: auto;
-}
 .collapsible {
     background-color: #777;
     color: white;
@@ -57,4 +42,6 @@ video {
     overflow: hidden;
     background-color: #f1f1f1;
     transition: max-height 0.2s ease-out;
+    max-height: 500px; /* Controls the expansion size */
+    overflow-y: auto; /* Allows scrolling within the collapsible content */
 }
