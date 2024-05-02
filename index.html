@@ -1,25 +1,87 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Video Title</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="logo.png">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+  </head>
+  <body>
     <div class="container">
-        <h1><img src="logo.png" alt="Logo" class="logo"> <i>Re:Imagine</i></h1>
-        <!-- YouTube Video Embed -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/_ej0pIk4z9I?si=B6tv49GxM_21ixMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h1><img src="logo.png" alt="Logo" class="logo" /> <i>Re:Imagine</i></h1>
+      <!-- YouTube Video Embed -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/_ej0pIk4z9I?si=B6tv49GxM_21ixMY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <p>
+        <b>Synopsis:</b>In the mysterious afterlife, newly deceased individuals
+        review their life's actions to validate their place for eternity.
+        Players are subjected to harsh examination by heavenly entities (Good
+        Guy and Bad Guy), who assess all deeds and intentions. The difficulty is
+        demonstrating one's merit in reaching paradise or meeting a grim fate.
+        <br />
+        <br />
+      </p>
+
+      <p style="font-size: 75%">
+        <b>Group Members:</b> Alyanna McGrath, Amylisha Mykyta, and Seolbin
+        Hong. Part of Haptic Media Spring 2024 @ Occidental College
+      </p>
+      <button class="collapsible">Installation</button>
+      <div class="content">
         <p>
-            <b>Synopsis:</b>In the mysterious afterlife, newly deceased individuals review their life's actions to validate their place for eternity. Players are subjected to harsh examination by heavenly entities (Good Guy and Bad Guy), who assess all deeds and intentions. The difficulty is demonstrating one's merit in reaching paradise or meeting a grim fate.
-            <br>
-            <br>
-            <p style="font-size: 75%"><b>Group Members:</b> Alyanna McGrath, Amylisha Mykyta, and Seolbin Hong. Part of Haptic Media Spring 2024 @ Occidental College
+          Let's first discuss the physical haptic elements of our game, which
+          include the 'Big Book' and the 'stamp.' If you've seen the video—or
+          even just the first 15 seconds—you'll notice a question posed,
+          instructing players to write their response in the Big Book. This book
+          is crucial at both the beginning and end of the game. Alongside it, we
+          have a stamp marked ‘DENIED,’ which plays a vital role in the game’s
+          final task. While I won’t spoil the ending, the book provides a
+          tangible way for players to interact with the game, and the stamp adds
+          a sense of permanence to the players' actions.
         </p>
+        <figure>
+          <img src="images/setup.jpg" alt="Trulli" style="width: 65%" />
+          <figcaption>
+            Fig.1 - Our table installation setup before the doors opened for the
+            arcade viewers on Friday, April 26th, 2024.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/IMG_9502.jpg" alt="Trulli" style="width: 65%" />
+          <figcaption>
+            Fig.2 - Professor Schiffer passing by our installation.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/book.png" alt="Trulli" style="width: 65%" />
+          <figcaption>
+            Fig.3 - Professor Schiffer passing by our installation.
+          </figcaption>
+        </figure>
+      </div>
     </div>
-</body>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
